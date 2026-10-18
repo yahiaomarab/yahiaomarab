@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" role="img" aria-label="Yahia Omar Abdelwahab, Flutter Engineer and Applied AI Developer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.55" stop-color="#0b1a1f"/>
+      <stop offset="1" stop-color="#05966a"/>
+    </linearGradient>
+    <linearGradient id="waveA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00f594" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#00f594" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="waveB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#059669" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#00d4aa" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00f594"/>
+      <stop offset="1" stop-color="#00d4aa"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+
+    <!-- Typing reveal: one clip per role, each visible during its own third of the 9s loop -->
+    <clipPath id="type0">
+      <rect x="375" y="160" height="44" width="0">
+        <animate attributeName="width" dur="9s" repeatCount="indefinite"
+                 keyTimes="0;0.1667;0.3067;0.3077;1" values="0;254;254;0;0"/>
+      </rect>
+    </clipPath>
+    <clipPath id="type1">
+      <rect x="297" y="160" height="44" width="0">
+        <animate attributeName="width" dur="9s" repeatCount="indefinite"
+                 keyTimes="0;0.3333;0.5;0.64;0.641;1" values="0;0;410;410;0;0"/>
+      </rect>
+    </clipPath>
+    <clipPath id="type2">
+      <rect x="227" y="160" height="44" width="0">
+        <animate attributeName="width" dur="9s" repeatCount="indefinite"
+                 keyTimes="0;0.6667;0.8333;0.9733;0.9743;1" values="0;0;550;550;0;0"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="1000" height="300" fill="url(#bg)"/>
+
+  <!-- Floating particles -->
+  <g fill="#00f594">
+    <circle cx="120" r="2.5" cy="260"><animate attributeName="cy" values="270;30" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.7;0" dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="260" r="2" cy="260"><animate attributeName="cy" values="270;50" dur="9s" begin="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.6;0" dur="9s" begin="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="430" r="3" cy="260"><animate attributeName="cy" values="270;20" dur="8s" begin="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.5;0" dur="8s" begin="3s" repeatCount="indefinite"/></circle>
+    <circle cx="640" r="2" cy="260"><animate attributeName="cy" values="270;40" dur="10s" begin="0.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.7;0" dur="10s" begin="0.5s" repeatCount="indefinite"/></circle>
+    <circle cx="820" r="2.5" cy="260"><animate attributeName="cy" values="270;25" dur="7.5s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.8;0" dur="7.5s" begin="2s" repeatCount="indefinite"/></circle>
+    <circle cx="930" r="2" cy="260"><animate attributeName="cy" values="270;60" dur="9s" begin="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;0.8;0" dur="9s" begin="4s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- Title: blurred copy pulses behind the sharp text -->
+  <text x="500" y="112" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="54" font-weight="800" fill="#00f594" filter="url(#glow)">
+    Yahia Omar Abdelwahab
+    <animate attributeName="opacity" values="0.35;0.8;0.35" dur="3.5s" repeatCount="indefinite"/>
+  </text>
+  <text x="500" y="112" text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="54" font-weight="800" fill="url(#title)">Yahia Omar Abdelwahab</text>
+
+  <!-- Typing subtitle (monospace, fixed text length so the clips line up) -->
+  <g font-family="'JetBrains Mono','Fira Code','Courier New',monospace" font-size="26" fill="#00f594">
+    <text x="375.2" y="190" textLength="249.6" lengthAdjust="spacingAndGlyphs" clip-path="url(#type0)">Flutter Engineer</text>
+    <text x="297.2" y="190" textLength="405.6" lengthAdjust="spacingAndGlyphs" clip-path="url(#type1)">Applied AI &amp; LLM Developer</text>
+    <text x="227" y="190" textLength="546" lengthAdjust="spacingAndGlyphs" clip-path="url(#type2)">Clean Architecture · Package Author</text>
+  </g>
+
+  <!-- Waves -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="-1000 0" to="0 0" dur="14s" repeatCount="indefinite"/>
+    <path fill="url(#waveA)" d="M0 238 C125 208 375 268 500 238 C625 208 875 268 1000 238 C1125 208 1375 268 1500 238 C1625 208 1875 268 2000 238 V300 H0 Z"/>
+  </g>
+  <g>
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="-1000 0" dur="9s" repeatCount="indefinite"/>
+    <path fill="url(#waveB)" d="M0 258 C125 238 375 278 500 258 C625 238 875 278 1000 258 C1125 238 1375 278 1500 258 C1625 238 1875 278 2000 258 V300 H0 Z"/>
+  </g>
+</svg>
